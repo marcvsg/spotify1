@@ -11,18 +11,34 @@ function App() {
   };
 
   return (
-    <div>
-      <div className="header">
-        <img className="logo" src="./img/logo.png" alt="Logo" />
-      </div>
-      <div className="conteudo">
-        <p className="frase-conteudo">
-          Confira aqui seu top 10 Artistas favoritos do Spotify
-        </p>
-        <button className="spotify-button" onClick={handleLogin}>
-          <img className="spotify-icon" src="./img/spotify.png" alt="Spotify" />
-          <span className="button-text">Conectar com Spotify</span>
+    <div className="app-container">
+      <div className="app-content">
+        <div className="logo-container">
+          <div className="logo">🎵</div>
+        </div>
+
+        <h1 className="app-title">Spot Statistics</h1>
+        <p className="app-subtitle">Descubra seus artistas favoritos</p>
+
+        <button className="login-button" onClick={handleLogin}>
+          <span className="spotify-icon">🎧</span>
+          Conectar com Spotify
         </button>
+
+        <div className="features">
+          <div className="feature">
+            <span className="feature-icon">📊</span>
+            <span>Estatísticas detalhadas</span>
+          </div>
+          <div className="feature">
+            <span className="feature-icon">🎵</span>
+            <span>Artistas mais ouvidos</span>
+          </div>
+          <div className="feature">
+            <span className="feature-icon">📱</span>
+            <span>Totalmente responsivo</span>
+          </div>
+        </div>
       </div>
     </div>
   );
