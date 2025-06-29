@@ -58,7 +58,7 @@ app.get("/top-artists", async (req, res) => {
   const access_token = req.query.access_token;
   try {
     const response = await axios.get(
-      "https://api.spotify.com/v1/me/top/artists?time_range=short_term&limit=10",
+      "https://api.spotify.com/v1/me/top/artists?time_range=short_term&limit=30",
       {
         headers: {
           Authorization: "Bearer " + access_token,
