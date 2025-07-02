@@ -53,14 +53,14 @@ function App() {
     <div className="app-container">
       <div className="app-content">
         <div className="logo-container">
-          <div className="logo">🎵</div>
+          <img className="logo" src="/img/logo.png"></img>
         </div>
 
-        <h1 className="app-title">Spot Statistics</h1>
+        <h1 className="app-title">Spotlite</h1>
         <p className="app-subtitle">Descubra seus artistas favoritos</p>
 
         <button className="login-button" onClick={handleLogin}>
-          <span className="spotify-icon">🎧</span>
+          <span className="spotify-icon" img src="/img/spotify.png"></span>
           Conectar com Spotify
         </button>
 

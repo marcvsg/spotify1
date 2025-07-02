@@ -27,20 +27,18 @@ body {
   align-items: center;
   justify-content: center;
   padding: 20px;
-  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
 }
 
 /* Conteúdo principal */
 .app-content {
   background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
   border-radius: 20px;
   padding: 40px 30px;
   text-align: center;
   max-width: 400px;
   width: 100%;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 /* Logo */
@@ -106,7 +104,6 @@ body {
 }
 
 .login-button:hover {
-  transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(29, 185, 84, 0.4);
 }
 
@@ -115,6 +112,8 @@ body {
 }
 
 .spotify-icon {
+  width: 10px;
+  height: 10px;
   font-size: 1.2rem;
 }
 
@@ -139,7 +138,6 @@ body {
 
 .feature:hover {
   background: rgba(255, 255, 255, 0.15);
-  transform: translateX(5px);
 }
 
 .feature-icon {
@@ -257,13 +255,6 @@ body {
   .features {
     margin-top: 15px;
     gap: 10px;
-  }
-}
-
-/* Suporte para dark mode do sistema */
-@media (prefers-color-scheme: dark) {
-  .app-container {
-    background: linear-gradient(135deg, #0f1419 0%, #1a1f2e 100%);
   }
 }
 
